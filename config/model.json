@@ -1,0 +1,36 @@
+{
+  "_class_name": "NOW",
+  "_diffusers_version": "0.11.0",
+  "in_channels": 4,
+  "out_channels": 4,
+  "flip_sin_to_cos": true,
+  "freq_shift": 0,
+  "down_block_types": [
+    "CrossAttnDownBlock3D",
+    "CrossAttnDownBlock3D",
+    "CrossAttnDownBlock3D",
+    "DownBlock3D"
+  ],
+  "up_block_types": [
+    "UpBlock3D",
+    "CrossAttnUpBlock3D",
+    "CrossAttnUpBlock3D",
+    "CrossAttnUpBlock3D"
+  ],
+  "block_out_channels": [
+    128,
+    256,
+    512,
+    512
+  ],
+  "layers_per_block": 2,
+  "downsample_padding": 1,
+  "mid_block_scale_factor": 1,
+  "act_fn": "silu",
+  "norm_num_groups": 32,
+  "norm_eps": 1e-5,
+  "cross_attention_dim": 512,
+  "attention_head_dim": 8,
+  "action_dim": 4,
+  "diffusion_type": "diffusion"
+}

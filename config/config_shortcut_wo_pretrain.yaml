@@ -1,0 +1,36 @@
+run_name: shortcut_wo_pretrain
+results_dir: logs
+pretrained_vae_path: "/root/workspace/code/Navigation_worldmodel/weights/stable-diffusion-v1-5"
+
+
+model_config: config/model.json
+diffusion_type: "shortcut"
+pretrain: False
+freeze: "none"
+# dataset settings
+image_size: 128
+context_size: 1
+normalize: False
+len_traj_pred: 11 #except the current condition frame (12-1)
+# traj_stride: 1 #use all trajs when training
+normalize: False
+
+# training settings
+grad_clip_val: 10.0
+batch_size: 64
+num_workers: 12
+lr: 8e-5
+
+random_traj: True
+
+if_data_filter: True
+max_dist_cat: 20
+
+
+
+
+datasets:
+  habitat-ac26ZMwG7aT:
+    data_folder: /root/workspace/dataset/worldmodel_dataset/crqifcs7v38s73fnfgl0/Nav_datasets/habitat/ac26ZMwG7aT
+    train: data_splits/habitat-ac26ZMwG7aT/train/ # path to train folder with traj_names.txt
+    test: data_splits/habitat-ac26ZMwG7aT/test/ # path to test folder with traj_names.txt

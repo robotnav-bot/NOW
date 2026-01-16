@@ -1,0 +1,21 @@
+
+traj_stride: 8
+
+eval_datasets:
+  # recon:
+  #   data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/recon
+  #   test: data_splits/recon/test/
+  # sacson:
+  #   data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/sacson
+  #   test: data_splits/sacson/test
+  # scand:
+  #   data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/scand
+  #   test: data_splits/scand/test
+  # go_stanford:
+  #   data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/go_stanford
+  #   test: data_splits/go_stanford/test/
+
+  habitat-ac26ZMwG7aT_for_test:
+    data_folder: /root/workspace/dataset/worldmodel_dataset/crqifcs7v38s73fnfgl0/Nav_datasets/habitat/ac26ZMwG7aT_for_test
+    test: data_splits/habitat-ac26ZMwG7aT_for_test/test/
+    

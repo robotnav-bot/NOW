@@ -1,0 +1,41 @@
+run_name: shortcut_pretrain_public
+results_dir: logs
+pretrained_vae_path: "/root/workspace/code/Navigation_worldmodel/weights/stable-diffusion-v1-5"
+
+
+model_config: config/model.json
+diffusion_type: "shortcut"
+pretrain: False
+
+# dataset settings
+image_size: 128
+context_size: 1
+normalize: False
+len_traj_pred: 11 #except the current condition frame (12-1)
+# traj_stride: 1 #use all trajs when training
+normalize: False
+
+# training settings
+grad_clip_val: 10.0
+batch_size: 64
+num_workers: 12
+lr: 8e-5
+random_traj: True
+
+datasets:
+  recon:
+    data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/recon
+    train: data_splits/recon/train/ # path to train folder with traj_names.txt
+    test: data_splits/recon/test/ # path to test folder with traj_names.txt
+  sacson:
+    data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/sacson
+    train: data_splits/sacson/train
+    test: data_splits/sacson/test
+  scand:
+    data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/scand
+    train: data_splits/scand/train
+    test: data_splits/scand/test
+  go_stanford:
+    data_folder: /root/workspace/crqifcs7v38s73fnfgl0/Nav_datasets/go_stanford
+    train: data_splits/go_stanford/train/
+    test: data_splits/go_stanford/test/
