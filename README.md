@@ -91,3 +91,20 @@ We provide an intuitive inference script for testing:
 ```bash
 python inference.py
 ```
+
+---
+
+## Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@misc{shen2026efficientmultimodalnavigationonestep,
+      title={An Efficient and Multi-Modal Navigation System with One-Step World Model}, 
+      author={Wangtian Shen and Ziyang Meng and Jinming Ma and Mingliang Zhou and Diyun Xiang},
+      year={2026},
+      eprint={2601.12277},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2601.12277}, 
+}
