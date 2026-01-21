@@ -1,4 +1,9 @@
-# Training and Inference
+[[Paper]](https://arxiv.org/abs/2601.12277) [[Project Page]](https://robotnav-bot.github.io/nav-onestepwm/)
+
+## NOW (Navigation with One-step World model)
+![NOW Overview Diagram](./assets/intro.jpg)
+
+## Training and Inference
 
 ## 1. Data Preparation
 
