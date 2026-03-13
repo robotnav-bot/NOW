@@ -7,8 +7,8 @@
 
 ## 1. Data Preparation
 
-### 1.1 Public Datasets
-For acquiring and processing public datasets, please follow [NoMaD](https://github.com/robodhruv/visualnav-transformer?tab=readme-ov-file#data-wrangling).
+### 1.1 Preparing Datasets
+For acquiring and processing public datasets, please follow [NoMaD](https://github.com/robodhruv/visualnav-transformer?tab=readme-ov-file#data-wrangling). For Habitat datasets, install Habitat with `conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat`, then use `collect_datasets.py` to collect trajectories in the format required by this project. We use the [Matterport3D (MP3D) dataset](https://niessner.github.io/Matterport/) for data collection.
 
 ### 1.2 Dataset Structure
 Your dataset must follow the directory structure below. If you are collecting a custom dataset, please organize it accordingly:
